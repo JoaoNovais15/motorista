@@ -5,7 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ganhe Mais como Motorista</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="Js\nodemailer.js"></script>
+
+<!-- EmailJS -->
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  
+<!-- Firebase -->
+<script type="module">
+  import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js';
+  import { getFirestore } from 'https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore.js';
+</script>
+ 
 </head>
 <body>
   <!-- Header -->
@@ -121,7 +130,7 @@
             <div class="benefit-item">
               <img src="image/sono.png" alt="Ícone de flexibilidade">
            
-              <p>No final de sua jornada diária de corridas, voce tem a opção de receber apenas corridas com destino rumo ou próximo a sua casa, 
+              <p>No final de sua jornada diária de corridas, voce tem a opção de receber apenas corridas com destino rumo ou próximo a sua residência, 
                 oferecendo opções de trajetos, para otimizar seu tempo e planejamento.</p>
             </div>
             <div class="benefit-item">
@@ -164,10 +173,19 @@
     <div class="container">
       <h2>Tudo pronto para começar?</h2>
       <p>Cadastre-se agora e comece a ganhar ainda hoje, <br>dirigindo com liberdade e segurança!<br>Faça os dois cadastros.</p>
-      <a href="https://d.99app.com/3UMKNaj?shar_chanl=wa&share_media=WHATSAPP" class="btn"  target="_blank" rel="noopener noreferrer">Cadastre-se na 99POP</a>
-      <a id="uber-link" href="https://t.uber.com/referral/?invite_code=88vg2art6mcq" class="btn" target="_blank" rel="noopener noreferrer">Cadastre-se na UBER</a>
-    </div>
+      <a href="https://d.99app.com/3UMKNaj?shar_chanl=wa&share_media=WHATSAPP" 
+      class="btn" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      onclick="notifyClick('99POP')">Cadastre-se na 99POP</a>
+   
+   <a href="https://t.uber.com/referral/?invite_code=88vg2art6mcq" 
+      class="btn" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      onclick="notifyClick('UBER')">Cadastre-se na UBER</a>    </div>
   </section>
+  <p>Visitas ao site: <span id="counter">0</span></p>
 
 
 
@@ -183,6 +201,7 @@
     </div>
   </footer>
 
+  <script src="firebase.js" type="module"></script>
   <script src="script.js"></script>
 </body>
 </html>
