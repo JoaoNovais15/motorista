@@ -6,6 +6,17 @@
   <title>Ganhe Mais como Motorista</title>
   <link rel="stylesheet" href="styles.css">
 
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "joaonovais1547",
+      });
+   })();
+  </script>
+
 <!-- EmailJS -->
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
   
@@ -21,10 +32,36 @@
   <header class="header">
     <div class="cta" >
       <h1>Transforme sua vida dirigindo!</h1>
-      <p>Seja um motorista parceiro dos maiores aplicativos do mundo e ganhe mais todos os meses.</p>
+      <p>Seja motorista parceiro dos maiores aplicativos do mundo e ganhe mais todos os meses.</p>
       <a href="#cta" class="btn">Comece Agora</a>
     </div>
   </header>
+
+  <!-- Sessão de Posso ganhar dinheiro com meu carro? -->
+  <section class="benefits">
+    <div class="container">
+        <h2>Posso ganhar dinheiro com meu carro?</h2>
+        <img src="image/carro aband.PNG" alt="Ícone de carro" style="max-width: 100%; height: auto;">
+      <div class="testimonial-card">
+        <p>Ter um carro próprio envolve diversos custos fixos e variáveis, como combustível, 
+          manutenção, seguro, impostos e depreciação. Por isso, uma forma inteligente de 
+          equilibrar essas despesas ou até transformá-las em fonte de renda é considerar 
+          formas de ganhar dinheiro com o seu veículo.
+
+          Hoje, existem várias oportunidades acessíveis que permitem transformar seu carro 
+          em um ativo gerador de renda. Uma das mais conhecidas é trabalhar como motorista 
+          de aplicativo, como Uber ou 99.
+          Considerar essa possibilidade é uma maneira prática de maximizar o valor de um bem 
+          que, muitas vezes, fica parado na garagem por horas ou dias. Assim, você transforma 
+          um passivo em uma fonte de receita, aumenta sua renda mensal e ainda aproveita melhor 
+          os recursos que já possui.
+        
+          <br>        
+          Com dedicação e planejamento, seu carro pode se transformar em uma verdadeira ferramenta de incremento financeiro.</p>
+      </div>
+      
+    </div>
+  </section>
 
   <!-- Sessão de Benefícios -->
   <section class="benefits">
@@ -59,6 +96,7 @@
             e planeje seus deslocamentos com base nisso.
             </p>
         </div>
+
         <div class="benefit-item">
             <img src="image/wallet.png" alt="Ícone de suporte">
             <h3>Escolher as formas de pagamento</h3>
@@ -68,6 +106,19 @@
                 de caixa e diminuindo muito o tempo gasto no pagamento no final das corridas pelo passageiro.
               </p>
           </div>
+
+          <div class="benefit-item">
+            <img src="image/procurando.jpg" alt="Ícone de suporte">
+            <h3>Como achar minhas corridas?</h3>
+            <p>O próprio aplicativo se encarrega de localizar usuários próximos e distribuir as corridas, 
+              com base em sua localização e disponibilidade.
+            
+              Para aumentar suas chances de sucesso, é importante manter uma boa avaliação, 
+              oferecer um atendimento cordial, manter o carro limpo e seguir as diretrizes da 
+              plataforma, sem precisar investir em marketing ou publicidade.
+                          </p>
+          </div>
+
       </div>
     </div>
   </section>
@@ -109,8 +160,9 @@
         <div class="benefit-item">
           <img src="image/bancos.png" alt="Ícone de suporte">
           <h3>Como recebo meus ganhos?</h3>
-          <p>Os valores pagos diretamente no aplicativo são semanais e direto na sua conta cadastrada no aplicativo, descontado apenas a porcentagem devida ao aplicativo
-            das corridas recebidas dos passageiros no final das viagens.</p>
+          <p>Os valores pagos diretamente no aplicativo são semanais e direto na sua conta bancaria cadastrada no aplicativo, 
+            descontado apenas a porcentagem devida ao aplicativo das corridas recebidas diariamente dos passageiros 
+            no final das viagens via PIX ou em dinheiro.</p>
         </div>
               </div>
     </div>
@@ -123,24 +175,23 @@
           <div class="benefits-grid">
             <div class="benefit-item">
               <img src="image/ganhos.png" alt="Ícone de dinheiro">
-      
-              <p>Existem aplicativos que alertam sobre a presença de radares e também indicam a velocidade máxima permitida nas vias, 
+                <p>Existem aplicativos que alertam sobre a presença de radares e também indicam a velocidade máxima permitida nas vias, 
                 ajudando a evitar infrações e garantindo mais segurança nas viagens.</p>
             </div>
-            <div class="benefit-item">
-              <img src="image/sono.png" alt="Ícone de flexibilidade">
-           
-              <p>No final de sua jornada diária de corridas, voce tem a opção de receber apenas corridas com destino rumo ou próximo a sua residência, 
-                oferecendo opções de trajetos, para otimizar seu tempo e planejamento.</p>
-            </div>
+
             <div class="benefit-item">
               <img src="image/mulher.png" alt="Ícone de suporte">
-      
               <p>Ao iniciar uma corrida, levando o passageiro ao seu destino, desative as opções como UberX ou 99Pop para evitar 
                 distrações com novos pedidos de viagens recebidas, enquanto dirige. Após finalizar a corrida, ative essas opções novamente para 
                 continuar recebendo novas solicitações.</p>
             </div>
-                  </div>
+
+            <div class="benefit-item">
+              <img src="image/sono.png" alt="Ícone de flexibilidade">
+               <p>No final de sua jornada diária de corridas, voce tem a opção de receber apenas corridas com destino rumo ou próximo a sua residência, 
+                oferecendo opções de trajetos, para otimizar seu tempo e planejamento.</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -172,20 +223,26 @@
   <section id="cta" class="cta">
     <div class="container">
       <h2>Tudo pronto para começar?</h2>
-      <p>Cadastre-se agora e comece a ganhar ainda hoje, <br>dirigindo com liberdade e segurança!<br>Faça os dois cadastros.</p>
+      <p>Cadastre-se agora e comece a ganhar ainda hoje, <br>
+        dirigindo com liberdade e segurança!<br>
+        Faça os dois cadastros apenas quando estiver com a documentação pronta.</p>
+  
+   <a href="https://t.uber.com/referral/?invite_code=88vg2art6mcq" 
+      class="btn" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      onclick="notifyClick('UBER')">Cadastre-se na UBER</a>
+      
       <a href="https://d.99app.com/3UMKNaj?shar_chanl=wa&share_media=WHATSAPP" 
       class="btn" 
       target="_blank" 
       rel="noopener noreferrer"
       onclick="notifyClick('99POP')">Cadastre-se na 99POP</a>
    
-   <a href="https://t.uber.com/referral/?invite_code=88vg2art6mcq" 
-      class="btn" 
-      target="_blank" 
-      rel="noopener noreferrer"
-      onclick="notifyClick('UBER')">Cadastre-se na UBER</a>    </div>
+      <p>Fazendo aqui o seu cadastro, poderá ganhar um bonus do App após completar um número de corridas.</p>
+    </div>
   </section>
-  <p>Visitas ao site: <span id="counter">0</span></p>
+  <!--<p>Visitas ao site: <span id="counter">0</span></p>
 
 
 
